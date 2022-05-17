@@ -33,7 +33,7 @@ svg {
   border-radius: 50%;
 }
 .active .card-text {
-  animation: slide 0.5s 0.2s forwards;
+  animation: slide 0.5s  forwards;
 }
 
 

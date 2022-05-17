@@ -17,15 +17,13 @@ function showCardDoubleClick() {
 
 function openAccordionItems() {
 	const text = this.closest("article > div")
-  const arrow = this
 	if (text.classList.contains("active")) {
 		text.classList.remove("active");
-    arrow.classList.remove('icon-active')
-   
+    this.classList.remove('icon-active')
 	} else {
 		closeAccordionItem();
 		text.classList.toggle("active");
-    arrow.classList.add('icon-active')
+    this.classList.add('icon-active')
 	}
 }
 function closeAccordionItem() {
