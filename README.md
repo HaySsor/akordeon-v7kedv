@@ -20,3 +20,5 @@ Punkty bonusowe:
 1. Dodaj logikę zmiany stanu (toggle) sekcji przy dwukrotnym kliknięciu w jej tytuł
 2. Dodaj animację zawijania sekcji
 3. Dodaj animację rozwijania sekcji
+
+live :https://stackblitz.com/edit/akordeon-v7kedv?file=index.js
