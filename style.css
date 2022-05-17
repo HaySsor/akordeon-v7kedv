@@ -1,0 +1,59 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+.card header {
+  transition: background-color 0.3s;
+}
+
+.card-text {
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, height 0.5s;
+  animation: slide-up 0.5s forwards;
+}
+.icon {
+  z-index: 100;
+  transition: transform 0.3s;
+}
+.icon-active {
+  transform: rotate(180deg);
+}
+svg {
+  z-index: -100;
+  transition: transform 0.3s;
+}
+.active header {
+  background-color: aquamarine;
+  border-radius: 15px;
+}
+.active .icon {
+  background-color: black;
+  border-radius: 50%;
+}
+.active .card-text {
+  animation: slide 0.5s 0.2s forwards;
+}
+
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height:150px;
+  }
+}
+@keyframes slide-up {
+  from {
+    opacity: 1;
+    height:150px;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
